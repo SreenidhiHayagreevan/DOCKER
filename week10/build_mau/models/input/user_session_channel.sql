@@ -2,5 +2,5 @@ SELECT
 userId,
 sessionId,
 channel
-FROM {{ source('analytics', 'user_session_channel') }}
+FROM {{ source('raw_data', 'user_session_channel') }}
 WHERE sessionId IS NOT NULL
