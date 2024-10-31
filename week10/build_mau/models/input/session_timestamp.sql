@@ -1,5 +1,5 @@
 SELECT
 sessionId,
 ts
-FROM {{ source('analytics', 'session_timestamp') }}
+FROM {{ source('raw_data', 'session_timestamp') }}
 WHERE sessionId IS NOT NULL
